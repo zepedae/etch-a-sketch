@@ -1,0 +1,15 @@
+.pixel{
+    width: 2em;
+    height: 2em;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.pixel.sketched {
+    background-color:lavender;
+}
+
+.row {
+    display: flex;
+}
