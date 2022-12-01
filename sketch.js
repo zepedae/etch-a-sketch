@@ -21,10 +21,10 @@ document.querySelector('#create').addEventListener('click', () => {
     
     document.querySelectorAll('.row').forEach(e => e.remove());
 
-    let length = 10;
-    // while(!length || length > 100 || length < 0){
-    //     length = prompt('Enter grid length (<100)');
-    // }
+    let length;
+    while(!length || length > 100 || length < 0){
+        length = prompt('Enter grid length (<100)');
+    }
     createGrid(length);
     
     const pixels = document.querySelectorAll('.pixel');
