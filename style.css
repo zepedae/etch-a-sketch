@@ -1,9 +1,21 @@
+#container{
+    display: flex; 
+    flex-direction: column;
+    width: 50vw;
+}
+
 .pixel{
-    width: 2em;
-    height: 2em;
+    flex: 1 1 auto;
     border-style: solid;
     border-color: black;
     border-width: 1px;
+}
+
+.pixel::before{
+    content:'';
+    display: block;
+    padding-top:100%;
+
 }
 
 .row {
